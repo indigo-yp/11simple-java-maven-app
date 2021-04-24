@@ -39,7 +39,6 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh "chmod +x -R E:\java_proj\11simple-java-maven-app"
                 sh './jenkins/scripts/deliver.sh'
             }
         }
